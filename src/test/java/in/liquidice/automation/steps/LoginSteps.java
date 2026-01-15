@@ -49,7 +49,7 @@ public class LoginSteps {
 	public void the_user_should_see_an_error_message(String expectedMessage) {
 		// Check for error message (update locator in LoginPage if needed)
 		String actualMessage = driver.findElement(loginPage.errorMessage).getText();
-		Assert.assertEquals(actualMessage, expectedMessage, "Invalid user id or passwordname");
+		Assert.assertEquals(actualMessage, expectedMessage, "Invalid user id or passwordnam");
 		DriverManager.quitDriver();
 	}
 }
